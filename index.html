@@ -117,7 +117,7 @@
         <a href="https://www.linkedin.com/in/taracapel/" target="_blank">LinkedIn</a>
         <br>
         <br>
-        <form>
+        <form id="contactform" action="//formspree.io/tara_capel@hotmail.com" method="POST">
             <label for="name">*Name:</label>
             <br>
             <input type="text" name="name" required>
@@ -125,7 +125,9 @@
             <br>
             <label for="email">*Email:</label>
             <br>
-            <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input type="hidden" name="_subject" value="Portfolio Form">
+            <br>
+            <input type="text" name="_replyto" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             <br>
             <br>
             <label for="mobile">Mobile (optional):</label>
