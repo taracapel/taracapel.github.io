@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>
+            Tara Capel's Portfolio
+        </title>
+    </head>
+        <body>
+            <header>
+                <nav class="topnav" id="portfolioTopnav">
+                    <a href="#contact">Contact</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </nav>
+                
+                <h1>Tara Capel</h1>
+                </header>
+
+<main>
+        <!--About section-->
+        <div class="about" id="aboutsection">
+            <figure>
+                <a href="https://www.linkedin.com/in/taracapel/" target="_blank"><img src="./taracapel.png" height="100" alt="A photo of Tara Capel"/></a>
+            </figure>
+
+            <h2 id="about">About</h2>
+            
+            <p>User Experience Researcher and Designer with a background in web design and development, communications and marketing. I am people-focused and passionate about using innovative human-centred design methodologies to create unique and exciting digital experiences for people.
+                <br>
+                <br>
+                I am currently completing my PhD in Human-Computer Interaction at the Queensland University of Technology. During my PhD candidature, I have directed UX research and design initiatives on research projects run by QUT, including an evacuation application utilising augmented reality, and have tutored the core UX course (People, Context and Technology – CAB210) within the undergrad IT program.
+                <br>
+                <br>
+                I am also currently a Behavioural and UX Researcher within the Suncorp Digital Labs, which provides the execution function for innovation and test and learn for Suncorp. Within the Digital Labs, my role involves methodology design and implementation, data collection, and collating findings into actionable design ideas and recommendations to be implemented into future iterations of design prototypes.</p>
+            
+       
+
+        <!--Skills section-->
+    <div class="skills" id="skillssection">
+        <h3 id="skills">Skills</h3>
+
+        <table>
+            <tr>
+                <th>Research Methods</th>
+                <th>Web Design and Development</th>
+            </tr>
+            <tr>
+            <td><ul>
+                <li>Contextual Inquiry</li>
+                <li>Participant Observation</li>
+                <li>Interviews</li>
+                <li>Focus Groups</li>
+                <li>Card Sorting</li>
+                <li>Co-Design</li>
+                <li>Design Thinking Workshops</li>
+                <li>Photo and Video Elicitation</li>
+                <li>Cultural Probes</li>
+            </ul>
+        </td>
+            <td><ul>
+                <li>Low and High Fidelity Prototyping</li>
+                <li>Wireframing</li>
+                <li>Prototype Testing and Evaluation</li>
+                <li>User Experience Design</li>
+                <li>User Interface Design</li>
+                <li>Adobe Suite</li>
+                <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            </ul>
+        </td>
+     
+        </tr>
+            
+            
+        </table>
+
+       
+    </div>
+</div>
+
+        <!--Portfolio section-->
+        <div id="portfoliosection">
+        <h2 id="portfolio">Portfolio</h2>
+        <table>
+            <tr>
+                <th>Online Quiz</th>
+                <th>Publications</th>
+            </tr>
+            <tr>
+            <td><a href="./quiz.html" target="_blank">What is the right career for you? Take this quiz and find out!</a></td>
+            <td><a href="https://scholar.google.com/citations?hl=en&user=qxDHolMAAAAJ" target="_blank">Google Scholar Profile</a></td>   
+        </tr>
+            <tr>
+                <td>Skills: HTML, CSS, JavaScript</td>
+                <td>Skills: Participant Observation, Interviews, Co-Design, Photo and Video Elicitation, Cultural Probes</td>
+            
+            </tr>
+
+            
+        </table>
+    
+    </div>
+
+        <!--Contact section-->
+        <div id="contactsection">
+        <h2 id="contact" class="white">Contact</h2>
+        <a href="https://www.linkedin.com/in/taracapel/" target="_blank">LinkedIn</a>
+        <br>
+        <br>
+        <form>
+            <label for="name">*Name:</label>
+            <br>
+            <input type="text" name="name" required>
+            <br>
+            <br>
+            <label for="email">*Email:</label>
+            <br>
+            <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+            <br>
+            <label for="mobile">Mobile (optional):</label>
+            <br>
+            <input type="text" name="mobile" id="mobile" pattern="[0-9]">            
+            <br>
+            <br>
+            <label for="message">*Leave your message below:</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+            
+            <br>
+            <br>
+            <input type="submit" value="Send">
+
+        </form>
+        <br>
+        <br>
+    </div>
+</main>
+<script src="./script.js"></script>
+    </body>
+
+</html>
